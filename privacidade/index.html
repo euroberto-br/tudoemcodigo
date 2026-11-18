@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade · Tudo em Código</title>
+  <meta name="description" content="Como a Tudo em Código trata dados pessoais neste site e nas integrações com redes sociais, e como você exerce seus direitos pela LGPD.">
+  <meta name="theme-color" content="#080F28">
+  <link rel="canonical" href="https://tudoemcodigo.com/privacidade/">
+  <link rel="icon" type="image/x-icon" href="/marca/PNG/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/marca/PNG/tudoemcodigo-favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/marca/PNG/tudoemcodigo-icone-180-apple-touch.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tudo em Código">
+  <meta property="og:title" content="Política de Privacidade · Tudo em Código">
+  <meta property="og:description" content="Como a Tudo em Código trata dados pessoais e como você exerce seus direitos pela LGPD.">
+  <meta property="og:url" content="https://tudoemcodigo.com/privacidade/">
+  <meta property="og:image" content="https://tudoemcodigo.com/marca/redes-sociais/site-compartilhamento-og-1200x630.png">
+  <meta property="og:locale" content="pt_BR">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* Variáveis do manual da marca (marca/LEIA-ME-Marca.md): tema claro por padrão, escuro conforme o sistema */
+    :root {
+      --tc-azul: #0A84FF;
+      --tc-indigo: #6A5DF6;
+      --tc-violeta: #9A44F8;
+      --tc-gradiente: linear-gradient(90deg, #0A84FF 0%, #6A5DF6 55%, #9A44F8 100%);
+      --tc-fundo: #F7F9F9;
+      --tc-texto: #0B1020;
+      --tc-texto-2: #3A4160;
+      --tc-destaque: #4F5BE8;
+      --tc-linha: rgba(58, 65, 96, 0.18);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --tc-fundo: #080F28;
+        --tc-texto: #F9F9FA;
+        --tc-texto-2: #C9CDE0;
+        --tc-destaque: #8C97FA;
+        --tc-linha: rgba(201, 205, 224, 0.16);
+      }
+    }
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+    body {
+      background-color: var(--tc-fundo);
+      color: var(--tc-texto);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      padding: 1.5rem;
+    }
+    .pagina {
+      max-width: 760px;
+      margin: 0 auto;
+      animation: fadeIn 0.8s ease-out;
+    }
+    header {
+      padding: 1rem 0 2rem;
+      border-bottom: 1px solid var(--tc-linha);
+      margin-bottom: 2rem;
+    }
+    .logo {
+      display: block;
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--tc-azul);
+      background: rgba(10, 132, 255, 0.1);
+      border: 1px solid rgba(10, 132, 255, 0.25);
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(1.75rem, 5vw, 2.4rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .vigencia {
+      color: var(--tc-texto-2);
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin: 2.25rem 0 0.75rem;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 48px;
+      height: 3px;
+      margin-top: 0.5rem;
+      border-radius: 2px;
+      background: var(--tc-gradiente);
+    }
+    p, ul {
+      margin-bottom: 1rem;
+      color: var(--tc-texto-2);
+    }
+    ul {
+      padding-left: 1.4rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
+    }
+    strong {
+      color: var(--tc-texto);
+    }
+    a {
+      color: var(--tc-destaque);
+      text-underline-offset: 3px;
+    }
+    a:hover {
+      color: var(--tc-azul);
+    }
+    a:focus-visible {
+      outline: 2px solid var(--tc-azul);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+    .aviso {
+      border: 1px solid var(--tc-linha);
+      border-left: 3px solid var(--tc-azul);
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.25rem;
+      color: var(--tc-texto-2);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--tc-linha);
+      color: var(--tc-texto-2);
+    }
+    th {
+      color: var(--tc-texto);
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 3rem;
+      padding: 1.5rem 0 1rem;
+      border-top: 1px solid var(--tc-linha);
+      color: var(--tc-texto-2);
+      font-size: 0.9rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pagina { animation: none; }
+    }
+    @media (max-width: 560px) {
+      body { padding: 1rem; }
+      table, thead, tbody, tr, th, td { display: block; }
+      thead { position: absolute; left: -9999px; }
+      td { border-bottom: none; padding: 0.15rem 0; }
+      tr { border-bottom: 1px solid var(--tc-linha); padding: 0.6rem 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina">
+    <header>
+      <a href="/" aria-label="Tudo em Código, página inicial">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="/marca/SVG/tudoemcodigo-horizontal-transparente-texto-branco.svg">
+          <img src="/marca/SVG/tudoemcodigo-horizontal-transparente-texto-escuro.svg" alt="Tudo em Código" class="logo">
+        </picture>
+      </a>
+      <span class="status-badge">Privacidade</span>
+      <h1>Política de Privacidade</h1>
+      <p class="vigencia">Versão 1.0 · em vigor desde 18 de novembro de 2026</p>
+    </header>
+
+    <main>
+      <p>Esta política explica quais dados pessoais a <strong>Tudo em Código</strong> trata, para quê, por quanto tempo e como você pode exercer os direitos que a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018) garante. Ela vale para este site e para as integrações da Tudo em Código com redes sociais.</p>
+
+      <h2>1. Quem é o controlador</h2>
+      <p>O controlador dos dados é a <strong>Tudo em Código</strong>, representada por Roberto Oliveira, responsável pelo atendimento de titulares de dados. O canal para qualquer assunto de privacidade é <a href="mailto:contato@tudoemcodigo.com">contato@tudoemcodigo.com</a>.</p>
+
+      <h2>2. Quais dados tratamos</h2>
+      <table>
+        <thead>
+          <tr><th>Situação</th><th>Dados</th><th>Finalidade e base legal</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Você visita este site</td>
+            <td>Dados técnicos de acesso, como endereço IP, navegador e data e hora, registrados pelo provedor de hospedagem.</td>
+            <td>Entregar a página e proteger o serviço contra abuso (art. 7º, IX, legítimo interesse).</td>
+          </tr>
+          <tr>
+            <td>Você nos escreve por e-mail</td>
+            <td>Seu nome, seu endereço de e-mail e o conteúdo da mensagem.</td>
+            <td>Responder ao seu contato (art. 7º, V, procedimentos preliminares a pedido do titular).</td>
+          </tr>
+          <tr>
+            <td>Você autoriza a conexão de uma conta de rede social</td>
+            <td>Token de acesso e, quando a rede fornece, token de renovação; identificador e nome de exibição da conta; escopos (permissões) que você autorizou.</td>
+            <td>Publicar e agendar, na conta que você autorizou, conteúdo que o próprio titular da conta aprovou (art. 7º, I, consentimento, dado pela tela de autorização da rede).</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Este site não usa cookies de rastreamento, nem ferramentas de análise de audiência, nem pixels de publicidade. Se isso mudar, esta política será atualizada antes.</p>
+
+      <h2>3. Integrações com redes sociais</h2>
+      <p>A Tudo em Código pode se conectar ao <strong>LinkedIn</strong>, ao <strong>YouTube (Google)</strong>, ao <strong>TikTok</strong> e ao <strong>Instagram (Meta)</strong> para publicar conteúdo. A conexão só acontece depois que você autoriza, na tela da própria rede. Sobre esses dados:</p>
+      <ul>
+        <li>Acessamos apenas as permissões que você aprova na tela de autorização da rede.</li>
+        <li>Usamos os dados somente para publicar ou agendar o conteúdo aprovado e para consultar o andamento dessa publicação.</li>
+        <li><strong>Não vendemos</strong> esses dados, não os usamos para publicidade e não os compartilhamos com terceiros, além da própria rede social em que a publicação é feita.</li>
+        <li>Os tokens são armazenados <strong>cifrados</strong> e não aparecem em registros de funcionamento (logs).</li>
+        <li>Ao desconectar a conta, ou quando a conexão expira, os tokens são <strong>apagados</strong> e a publicação automática é desligada.</li>
+      </ul>
+      <div class="aviso">
+        <strong>Dados recebidos das APIs do Google:</strong> o uso e a transferência, para qualquer outro aplicativo, de informações recebidas das APIs do Google respeitarão a <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.
+      </div>
+      <p>Você também pode revogar o acesso a qualquer momento pelas configurações da própria rede, por exemplo em <a href="https://myaccount.google.com/permissions" rel="noopener">permissões da Conta Google</a> e em <a href="https://www.linkedin.com/psettings/permitted-services" rel="noopener">serviços permitidos do LinkedIn</a>. No TikTok e no Meta, a opção fica nas configurações de segurança e de aplicativos da conta.</p>
+
+      <h2>4. Com quem compartilhamos</h2>
+      <ul>
+        <li><strong>Provedor de hospedagem do site</strong> (Vercel), que opera o servidor e registra dados técnicos de acesso.</li>
+        <li><strong>A rede social</strong> em que você conectou a conta, na medida necessária para publicar.</li>
+        <li><strong>Autoridades</strong>, quando houver obrigação legal ou ordem judicial.</li>
+      </ul>
+      <p>Alguns desses provedores podem tratar dados fora do Brasil. Quando isso ocorrer, observamos o art. 33 da LGPD.</p>
+
+      <h2>5. Por quanto tempo guardamos</h2>
+      <ul>
+        <li><strong>Mensagens de e-mail:</strong> pelo tempo necessário para atender o seu contato e cumprir obrigações legais.</li>
+        <li><strong>Tokens de redes sociais:</strong> até você desconectar a conta ou até a expiração da conexão.</li>
+        <li><strong>Registros técnicos de acesso:</strong> pelo período definido pelo provedor de hospedagem.</li>
+      </ul>
+
+      <h2>6. Seus direitos</h2>
+      <p>Pelo art. 18 da LGPD, você pode pedir, a qualquer momento e sem custo:</p>
+      <ul>
+        <li>confirmação de que tratamos dados seus e acesso a eles;</li>
+        <li>correção de dados incompletos, inexatos ou desatualizados;</li>
+        <li>anonimização, bloqueio ou eliminação de dados desnecessários ou excessivos;</li>
+        <li>portabilidade dos dados;</li>
+        <li>eliminação dos dados tratados com base no seu consentimento;</li>
+        <li>informação sobre com quem compartilhamos os dados;</li>
+        <li>informação sobre a possibilidade de não consentir e sobre as consequências;</li>
+        <li>revogação do consentimento.</li>
+      </ul>
+      <p>Para exercer qualquer um deles, escreva para <a href="mailto:contato@tudoemcodigo.com">contato@tudoemcodigo.com</a>. A confirmação simplificada de que tratamos dados seus é dada de imediato, e a declaração completa em até <strong>15 dias</strong> (art. 19). Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+      <h2>7. Segurança</h2>
+      <p>Adotamos medidas técnicas para proteger os dados, como conexão cifrada (HTTPS), cifragem de tokens e acesso restrito. Nenhum sistema é totalmente imune a incidentes; se ocorrer um que possa causar risco ou dano relevante a você, comunicaremos você e a ANPD nos prazos da regulamentação.</p>
+
+      <h2>8. Crianças e adolescentes</h2>
+      <p>Nossos serviços não são direcionados a crianças e adolescentes, e não coletamos dados deles de forma intencional.</p>
+
+      <h2>9. Mudanças nesta política</h2>
+      <p>Podemos atualizar esta política. A versão em vigor e a data ficam sempre no topo desta página. Mudanças que alterem a finalidade do tratamento serão informadas antes de entrarem em vigor.</p>
+
+      <h2>10. Contato</h2>
+      <p>Dúvidas, pedidos ou reclamações sobre privacidade: <a href="mailto:contato@tudoemcodigo.com">contato@tudoemcodigo.com</a>.</p>
+    </main>
+
+    <footer>
+      <a href="/">Tudo em Código</a> · tudoemcodigo.com
+    </footer>
+  </div>
+</body>
+</html>
